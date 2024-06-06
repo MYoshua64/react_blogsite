@@ -1,0 +1,25 @@
+.BlogCard {
+	background-color: #BEAEE2;
+    border-radius: 10px;
+    padding: 10px;
+    display: grid;
+    grid-template-rows: 60px auto;
+    padding-bottom: 20px;
+}
+
+.BlogCard > .AccountInfo{
+    border-bottom: 2px dotted #F7DBF0;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.BlogCard > .PostDetails{
+    padding: 0px 20px;
+}
+
+@media  screen and (max-width:767px) {
+    .BlogCard > .AccountInfo > p{
+        font-size: 0.7rem;
+    }
+}

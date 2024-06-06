@@ -1,0 +1,52 @@
+.LoginModal {
+	display: none;
+}
+
+.LoginModal-active{
+    position: absolute;
+    top: 0px;
+    height: 100%;
+    width: 100%;
+    background-color: #f9f9f999;
+}
+
+.LoginModal-active > .LoginWindow{
+    animation: fadeIn 0.75s;
+    position: relative;
+    left: 35%;
+    top: 30%;
+    width: 30%;
+    height: 40%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.LoginModal-active > .LoginWindow > .LoginWindow-closeBTN{
+    position: absolute;
+    left: -20px;
+    top: -10px;
+}
+
+.LoginModal-active > .LoginWindow > .LoginWindow-closeBTN > a{
+    font-size: 1.5rem;
+}
+
+.LoginForm{
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.LoginForm > .field-wrapper{
+    display: flex;
+    gap: 20px;
+}
+
+.SiteLink > a:disabled, .SiteLink > button:disabled{
+    background-color: lightgray;
+    color: black;
+}

@@ -1,0 +1,57 @@
+.Layout {
+	height: 100%;
+}
+
+.Layout > .LayoutHeader{
+	position: sticky;
+	max-height: 15%;
+}
+
+.app-main{
+	display: grid;
+	grid-template-columns: 15% 70% 15%;
+	background-color: #CDF0EA;
+	height: 85%;
+	width: 100%;
+	justify-content: center;
+}
+
+.Container-Left, .Container-Middle, .Container-Right{
+	height: 100%;
+}
+
+.Sticky{
+	position: fixed;
+	left: 10px;
+	bottom: 15px;
+}
+
+.Container-Middle{
+	height: 100%;
+	padding: 10px 15px 0px;
+	overflow: auto;
+	border-left: 5px dotted #BEAEE2;
+	border-right: 5px dotted #BEAEE2;
+}
+
+.Fixed-top-right{
+	position: fixed;
+	bottom: 15px;
+	right: 10px;
+}
+
+@media screen and (max-width:1024px) {
+	.app-main{
+		display: inline-block;
+	}
+
+	.Container-Middle{
+		border: 0px;
+	}
+}
+
+@media screen and (max-height: 770px) {
+	.app-main{
+		height: 80%;
+	}
+}
